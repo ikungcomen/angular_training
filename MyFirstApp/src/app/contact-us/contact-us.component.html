@@ -1,0 +1,197 @@
+<!--<div class = 'card'>
+    <div class = 'card-header'>
+        ngSwitch Directive Implementation
+    </div>
+    <div class = 'card-body'>
+        Input String: <input type = "text" [(ngModel)] = "num" />
+       <b> <div [ngSwitch] = "num">
+            <div *ngSwitchCase = "1" >One</div>
+            <div *ngSwitchCase = "2" >Two</div>
+            <div *ngSwitchCase = "3" >Three</div>
+            <div *ngSwitchCase = "4" >Four</div>
+            <div *ngSwitchCase = "5" >Five</div>
+            <div *ngSwitchDefault+ >This is Default</div>
+        </div>
+    </b>
+    </div>
+</div>
+
+<div  lass='panel panel-primary'>
+    <div class = 'panel-heading'>
+        {{title}}
+    </div>
+</div>
+
+<ul>
+    <li *ngFor = "let medicine of vaccines;">
+        {{medicine.name}} - {{medicine.company}} - {{medicine.approvedBy}} - {{medicine.releaseDate}}
+    </li>
+</ul>
+
+<div class = 'panel-body'>
+    <div class='table-responsive'>
+        <table class='table'>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Company</th>
+                    <th>approvedBy</th>
+                    <th>releaseDate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor = "let medicine of vaccines;">
+                    <td>{{medicine.name}}</td>
+                    <td>{{medicine.company}}</td>
+                    <td>{{medicine.approvedBy}}</td>
+                    <td>{{medicine.releaseDate}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class='card'>
+    <div class='card-header'>
+        <p>Nested Array Implementation</p>
+    </div>
+
+    <div class = 'table-responsive'>
+        <table class = 'table table-bordered table-sm'>
+            <thead class = 'thead-dark'>
+                <tr>
+                    <th>Country Name</th>
+                    <th>Country Code</th>
+                    <th>Vaccine Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor = "let status of countries;">
+                    <td>{{status.countryName}}</td>
+                    <td>{{status.countryCode}}</td>
+                    <td>
+                        <table class = 'table table-sm'>
+                            <tbody>
+                                <tr *ngFor = "let vaccine of status.vaccineStatus;">
+                                    <td>{{vaccine.age}}</td>
+                                    <td>{{vaccine.dose}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+-->
+
+<!--
+<div class = 'row'>
+    <div [ngClass] = "{'red': true, 'size20': true}">Red Text with Size 20px</div>-->
+    <!-- <div [ngClass] = "['red', 'size20']">Red Text with Size 20px</div> -->
+    <!-- <div [ngClass] = "'red size20'">Red Text with Size 20px</div> -->
+    <!-- <div [ngClass] = "cssStringVar">Red Text with Size 20px</div> -->
+<!--</div>
+
+<p [ngStyle] = "{'color': 'purple',
+                 'font-size': '20px',
+                 'font-weight': 'bold' }">
+                Multiple Styles with [ngStyle] Attribute Directive
+                </p>
+
+<p>ngIF Implementation</p>
+<div class = "row">
+    Show <input type = "checkbox" [(ngModel)] = "showMe" />
+</div>
+<h1>ngIf</h1>
+
+<p *ngIf = "showMe">
+    ShowMe <b>is Checked</b>
+</p>
+
+<p *ngIf = "!showMe">
+    ShowMe <b>is UnChecked</b>
+</p>
+
+<h1>ngIf Else</h1>
+<p *ngIf = "showMe; else elseBlock1">
+    ShowMe <b>is Checked</b>
+</p>
+
+<ng-template #elseBlock1>
+    <p>ShowMe <b>is UnChecked Using </b> elseBlock</p>
+</ng-template>
+
+<h1>ngIf then else</h1>
+
+<p *ngIf = "showMe; then thenBlock2 else elseBlock2">
+    This is If then block
+</p>
+
+<ng-template #thenBlock2>
+    <p>ShowMe <b>is Checked Using </b> thenblock</p>
+</ng-template>
+
+<ng-template #elseBlock2>
+    <p>ShowMe <b>is UnChecked Using </b> elseBlock</p>
+</ng-template>
+-->
+
+<!-- Start added by anurart -->
+<div class="container">
+    <br> <br>
+    <form  novalidate>
+        <div class="form-group row">
+          <label for="inputName" class="col-sm-1 col-form-label text-right">Name</label>
+          <div class="col-sm-11">
+                <input type="text" class="form-control" id="inputName"  name="inputName" placeholder="Name...">
+          </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputEmail" class="col-sm-1 col-form-label text-right">Email</label>
+            <div class="col-sm-11">
+              <input type="text" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email...">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPhone" class="col-sm-1 col-form-label text-right">Phone</label>
+            <div class="col-sm-11">
+              <input type="text" class="form-control" id="inputPhone" name="inputPhone" placeholder="Phone...">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputState" class="col-sm-1 col-form-label text-right">State</label>
+            <div class="col-sm-11">
+              <input type="text" class="form-control" id="inputState" name="inputState" placeholder="State...">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputCity" class="col-sm-1 col-form-label text-right">City</label>
+            <div class="col-sm-11">
+              <input type="text" class="form-control" id="inputCity" name="inputCity" placeholder="City...">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputCountry" class="col-sm-1 col-form-label text-right">Country</label>
+            <div class="col-sm-11">
+              <input type="text" class="form-control" id="inputCountry" name="inputCountry" placeholder="Country...">
+            </div>
+          </div>
+          
+          <div class="form-group row">
+            <label for="inputContact" class="col-sm-1 col-form-label text-right">Contact</label>
+            <div class="col-sm-11">
+              <input type="text" class="form-control" id="inputContact" name="inputContact" placeholder="Contact...">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-11">
+                <button type="button"  class="btn btn-success">Success</button>&nbsp;&nbsp;
+                <button type="reset" class="btn btn-danger">Reset</button>
+            </div>
+          </div>
+      </form>
+</div>
+<!-- End added by anurart -->

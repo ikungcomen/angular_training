@@ -1,0 +1,67 @@
+<!--<p>Unformatted Date without using Pipes <b> {{emiDate}}</b></p>
+<p>Medium Date using Pipes <b>{{emiDate | date:'medium'}}</b></p>
+<p>Short Date using Pipes <b>{{emiDate | date:'short'}}</b></p>
+<p>Full Date using Pipes <b>{{emiDate | date:'fullDate'}}</b></p>
+<p>Long Date using Pipes <b>{{emiDate | date:'longDate'}}</b></p>
+<p>MediumDate using Pipes <b>{{emiDate | date:'mediumDate'}}</b></p>
+<p>ShortDate using Pipes <b>{{emiDate | date:'shortDate'}}</b></p>
+<p>MediumTime Date using Pipes <b>{{emiDate | date:'mediumTime'}}</b></p>
+<p>DD-MM-YY Date using Pipes <b>{{emiDate | date:'dd-MM-y'}}</b></p>
+<p>DD-MM-YY HH:mm Date using Pipes <b>{{emiDate | date:'dd-MM-yy HH:mm'}}</b></p><br>
+
+<p>Unformatted Title is Displayed like <b>{{title}}</b></p>
+<p>UpperCase Title <b>{{title | uppercase }}</b></p>
+<p>UpperCase Title <b>{{title | lowercase }}</b></p> <br>
+
+<p>Unformatted Message is Displayed like <b>{{msg}}</b></p>
+<p>Slicing Message 11:20<b>{{msg | slice: 11:20 }}</b></p>
+<p>UpperCase Title -9<b>{{msg | slice: -9 }}</b></p> <br>
+
+<p>Unformatted Currency {{cur}}</p>
+<p>Formatted Currency in Indian Standard <b>{{cur | currency: 'INR' }}</b></p>
+<p>Formatted Currency in US Dollar <b>{{cur | currency: 'USD' }}</b></p>
+<p>Formatted Currency in Euro <b>{{cur | currency: 'EUR' }}</b></p><br><br>
+
+<div class='card'>
+  <div class="card-header">
+    <p>Temperature Converted Custom Pipe</p>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <h3>Fahrenheit to Celsius</h3>
+    </div>
+    <div class="row">
+      <p>Fahrenheit: <input type="text" [(ngModel)] = "Fahrenheit" />
+      Celsius: {{Fahrenheit | tempConverter:'C'}}
+      </p>
+    </div>
+    <div class="row">
+      <h3>Celsius to Fahrenheit</h3>
+    </div>
+    <div class="row">
+      <p>Celsius: <input type="text" [(ngModel)] = "celcius" />
+        Fahrenheit: {{celcius | tempConverter:'F'}}
+      </p>
+    </div>
+  </div>
+</div>
+-->
+<div class="container">
+  <nav class="navbar navbar-default">
+    <div class="fluid-container">
+      <div class="navbar-header">
+        <a class="navbar-brand" [routerLink]="['/']"><strong>{{title}}</strong></a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a [routerLink]="['home']">Home</a></li>
+        <li><a [routerLink]="['contact']">Contact Us</a></li>
+        <li><a [routerLink]="['about']">About</a></li>
+        <li><a [routerLink]="['career']">Career</a></li>
+        <li><a [routerLink]="['ourteam']">OurTeam</a></li>
+        <li><a [routerLink]="['ourservices']">Our Services</a></li>
+        <li><a [routerLink]="['httpdata']">Http Data</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<router-outlet></router-outlet>

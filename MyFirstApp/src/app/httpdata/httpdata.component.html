@@ -1,0 +1,25 @@
+<div class="container">
+    <h1 class="heading"><strong> Http Data</strong></h1>
+    <button type="button" (click)="getData()">Get Data</button><br><br>
+    <table class="table-responsive">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Status</th>
+        </tr>
+        <tr *ngFor = "let data of myData;">
+            <td>{{data.data.id}}</td>
+            <td>{{data.data.name}}</td>
+            <td>{{data.data.email}}</td>
+            <td>{{data.data.gender}}</td>
+            <td>{{data.data.status}}</td>
+        </tr>
+    </table>
+    {{myData | json}}
+</div>
+
+
+
+

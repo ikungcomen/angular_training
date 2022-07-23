@@ -1,0 +1,14 @@
+ul li:hover {
+    background-color: #FF4000;
+    color: #FFFFFF;
+}
+
+.navbar-brand {
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+}
+
+.navbar-brand:hover {
+    background-color: #FF4000;
+    color: #151515;
+}

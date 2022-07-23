@@ -1,0 +1,35 @@
+1. To run the unit tests we will use the command: ng tests
+    0.1 The application will first compile for any errors and then will execute the unit tests
+
+2. All the unit test scripts are written in Jasmine frameweork (BDD)
+
+3. Karma is a test script runner server which is used to execute the tests
+
+4.  It will open a new window for a browser
+    a. Chrome
+    b. FireFox
+    c. Safari
+    d. Internet Explorer
+
+5. We can choose and configure which browser we want to use and work with
+
+6. Green bullet in the report means - the test has passed
+
+7. Red color (*) mark means the test has failed
+
+8. In the memory line - we can see the counts of total test specs, failed, passed and skipped
+
+9. How we can configure the settings of Karma: src -> karma.conf.js
+
+10. If we want to ue firefox, we need to import that library
+    - npm install
+        - It will install the required library for the same module
+
+11. We can change the port no in karma.conf.js
+
+12. Which all browsers we want our app to run on can be defined in the browsers array in karma.conf.js
+    - in browsers array
+
+13. We can also pass params in our cli command itself
+
+14. we should always test the apps on different browsers.
